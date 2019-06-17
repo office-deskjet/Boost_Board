@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name Boost_Board)(type KiCad)(uri ${KIPRJMOD}/Boost_Board.pretty)(options "")(descr ""))
+  (lib (name digikey-footprints)(type KiCad)(uri /home/you/Boards/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
 )
