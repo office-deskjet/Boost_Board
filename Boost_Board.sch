@@ -1,0 +1,188 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:L L?
+U 1 1 5D072E2C
+P 2200 3150
+F 0 "L?" V 2390 3150 50  0000 C CNN
+F 1 "L" V 2299 3150 50  0000 C CNN
+F 2 "" H 2200 3150 50  0001 C CNN
+F 3 "~" H 2200 3150 50  0001 C CNN
+	1    2200 3150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D07330C
+P 4500 3600
+F 0 "C?" H 4615 3646 50  0000 L CNN
+F 1 "C" H 4615 3555 50  0000 L CNN
+F 2 "" H 4538 3450 50  0001 C CNN
+F 3 "~" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L TPS613221ADBVT:TPS613221ADBVT U?
+U 1 1 5D0739C4
+P 2650 3350
+F 0 "U?" H 3450 3737 60  0000 C CNN
+F 1 "TPS613221ADBVT" H 3450 3631 60  0000 C CNN
+F 2 "DBV5" H 3450 3590 60  0001 C CNN
+F 3 "" H 2650 3350 60  0000 C CNN
+	1    2650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D0747F6
+P 1100 3300
+F 0 "J?" H 1208 3481 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 1208 3390 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1100 3300 50  0001 C CNN
+F 3 "~" H 1100 3300 50  0001 C CNN
+	1    1100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D075422
+P 5600 3450
+F 0 "J?" H 5572 3424 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 5572 3333 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 3450 50  0001 C CNN
+F 3 "~" H 5600 3450 50  0001 C CNN
+	1    5600 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5D07603F
+P 4850 3600
+F 0 "C?" H 4965 3646 50  0000 L CNN
+F 1 "C" H 4965 3555 50  0000 L CNN
+F 2 "" H 4888 3450 50  0001 C CNN
+F 3 "~" H 4850 3600 50  0001 C CNN
+	1    4850 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5D07B6A4
+P 2200 3450
+F 0 "L?" V 2390 3450 50  0000 C CNN
+F 1 "L" V 2299 3450 50  0000 C CNN
+F 2 "" H 2200 3450 50  0001 C CNN
+F 3 "~" H 2200 3450 50  0001 C CNN
+	1    2200 3450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 3350 2450 3350
+Wire Wire Line
+	2450 3350 2450 3150
+Wire Wire Line
+	2450 3350 2450 3450
+Wire Wire Line
+	2450 3450 2350 3450
+Connection ~ 2450 3350
+Wire Wire Line
+	2450 3150 2350 3150
+Wire Wire Line
+	2050 3150 1850 3150
+Wire Wire Line
+	1850 3150 1850 3300
+Wire Wire Line
+	1850 3450 2050 3450
+Wire Wire Line
+	1300 3300 1850 3300
+Connection ~ 1850 3300
+Wire Wire Line
+	1850 3300 1850 3450
+Wire Wire Line
+	1300 3400 1350 3400
+Wire Wire Line
+	1350 3400 1350 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5D07FCE3
+P 1350 3650
+F 0 "#PWR?" H 1350 3400 50  0001 C CNN
+F 1 "GND" H 1355 3477 50  0000 C CNN
+F 2 "" H 1350 3650 50  0001 C CNN
+F 3 "" H 1350 3650 50  0001 C CNN
+	1    1350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3450 2550 3450
+Wire Wire Line
+	2550 3450 2550 3700
+$Comp
+L power:GND #PWR?
+U 1 1 5D080818
+P 2550 3700
+F 0 "#PWR?" H 2550 3450 50  0001 C CNN
+F 1 "GND" H 2555 3527 50  0000 C CNN
+F 2 "" H 2550 3700 50  0001 C CNN
+F 3 "" H 2550 3700 50  0001 C CNN
+	1    2550 3700
+	1    0    0    -1  
+$EndComp
+Text Label 1600 3300 0    50   ~ 0
+Vin
+Wire Wire Line
+	5400 3550 5150 3550
+Wire Wire Line
+	5150 3550 5150 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5D085DF8
+P 5150 3750
+F 0 "#PWR?" H 5150 3500 50  0001 C CNN
+F 1 "GND" H 5155 3577 50  0000 C CNN
+F 2 "" H 5150 3750 50  0001 C CNN
+F 3 "" H 5150 3750 50  0001 C CNN
+	1    5150 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3450 4500 3450
+Connection ~ 4500 3450
+Wire Wire Line
+	4500 3450 4850 3450
+Wire Wire Line
+	4500 3750 4700 3750
+Wire Wire Line
+	4700 3750 4700 3900
+Connection ~ 4700 3750
+Wire Wire Line
+	4700 3750 4850 3750
+$Comp
+L power:GND #PWR?
+U 1 1 5D08918F
+P 4700 3900
+F 0 "#PWR?" H 4700 3650 50  0001 C CNN
+F 1 "GND" H 4705 3727 50  0000 C CNN
+F 2 "" H 4700 3900 50  0001 C CNN
+F 3 "" H 4700 3900 50  0001 C CNN
+	1    4700 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 3450
+Wire Wire Line
+	4850 3450 5400 3450
+$EndSCHEMATC
